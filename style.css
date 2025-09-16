@@ -348,6 +348,11 @@ section {
   justify-content: center;
 }
 
+#about .title {
+  color: rgba(255, 255, 255, 0.878);
+  text-align: center; /* Optional: centers the title */
+}
+
 /* Arrow Styling */
 .arrow {
   position: absolute;
