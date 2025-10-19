@@ -12,10 +12,10 @@
         <div class="logo"><a href="#profile">ani-ekanem.com</a></div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#Leadership">Leadership</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -30,71 +30,99 @@
             </div>
             <div class="menu-links">
                 <ul>
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+
                     <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                     <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#Leadership" onclick="toggleMenu()">Leadership</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/me_profile_pic.png" alt="Aniekan Ekanem profile Picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hi! I'm</p>
-            <h1 class="title"><span id="typed-name"></span></h1>
-            <p class="section__text__p2">Electrical Engineering Student</p>
+        <div class="profile-left">
+            <div class="section__pic-container">
+            <img src="./assets/cropped_circle_image.png" alt="Aniekan Ekanem profile Picture">
+            </div>
             <div class="btn-container">
-                <button 
+            <button 
                 class="btn btn-color-2" 
                 onclick="window.open('./assets/resume.pdf')"
-                >Resume</button>
-                
-                <button 
+            >Resume</button>
+            
+            <button 
                 class="btn btn-color-1" 
                 onclick="location.href='./#contact'"
-                >Contact Info</button>
+            >Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/icons8-linkedin-250.png"
+            <img src="./assets/icons8-linkedin-250.png"
                 alt="My Linkedln" 
                 class="icon" 
                 onclick="location.href='https://www.linkedin.com/in/aniekan-ekanem-097b6923b/'"
-                />
-                <img src="./assets/icons8-github-512.png" 
+            />
+            <img src="./assets/icons8-github-512.png" 
                 alt="Github Profile" 
                 class="icon" 
                 onclick="location.href='https://github.com/aniekannn'"
-                />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <p class="title">About Me</p>
-        <div class="section-container"></div>
-        <div class="text-container">
-            <p>
-                Hi! I'm a Sophmore at Texas A&M University's College of Engineering majoring in Electrical Engineering. I'm primarily interested in Robotics, AI, Control Systems, and Computer Science.
-            </p>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'"
-        />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container"></div>
-        <div class="about-containers">
-            <div class="details-containers">
-                <h2 class></h2>
+            />
             </div>
         </div>
 
+        <div class="section__text">
+            <div class="intro-block">
+                <p class="section__text__p1">Hi! I'm</p>
+                <h1 class="title"><span id="typed-name"></span></h1>
+                <p class="section__text__p2">Electrical Engineering Student</p>
+                <div class="intro-text">
+                    <p>
+                        I'm a Sophomore at Texas A&M University's College of Engineering and majoring in Electrical Engineering. I'm primarily interested in Robotics, AI, Hardware, and Embedded Systems.
+                    </p>
+                    </div>
+            </div>
+        </div>
     </section>
+
+    <section id="experience">
+        <h1 class="experience-header">Explore My EXPERIENCE</h1>
+
+        <div class="experience-details-container">
+            <!-- Box 1 -->
+            <div class="experience-box">
+            <h2>
+                Software Engineering Intern @ 
+                <a href="https://www.sqooasha.com" target="_blank" class="inline-link">Sqooasha</a>
+            </h2>
+            <p>
+                Web Scraper tool using BeautifulSoup and regex to extract data. Created drivers to render HTML structures. Built a CLI interface with technical documentation. Improved scraping time by 80%.
+            </p>
+            <a href="#" class="project-link">Link to Project</a>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="experience-box">
+            <h2>Undergraduate Researcher @ DMB Lab – Texas A&M</h2>
+            <p>
+                Built AI-driven mobile and thermal-fluid systems. Developed localization and connectivity data extraction. Worked with private networks to predict real-time data and detect anomalies.
+            </p>
+            <a href="#" class="project-link">Link to Project</a>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="experience-box">
+            <h2>Lead of Electrical Subteam @ FIRST Robotics Team 7407</h2>
+            <p>
+                Led wiring, power distribution, and sensor integration. Ensured safety and efficiency of connections. Contributed to CAD design and PID control systems for autonomous operation.
+            </p>
+            <a href="#" class="project-link">Link to Project</a>
+            </div>
+        </div>
+        </section>
+
+
+
     <script src="script.js"></script>  
+
 </body>
 </html>
