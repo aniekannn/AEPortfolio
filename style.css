@@ -291,6 +291,7 @@ section {
   max-width: 600px;
   text-align: center;
   color: rgb(160, 150, 153);
+  font-family: 'Courier New', monospace;
 }
 
 
@@ -398,7 +399,7 @@ section {
 
 .project-link {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: #a0c4ff;
   text-decoration: underline;
   font-weight: bold;
