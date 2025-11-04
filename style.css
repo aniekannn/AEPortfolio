@@ -290,7 +290,7 @@ section {
   border-radius: 0.5rem;
   max-width: 600px;
   text-align: center;
-  color: rgb(160, 150, 153);
+  color: white;
   font-family: 'Courier New', monospace;
 }
 
@@ -365,6 +365,11 @@ section {
   padding: 1rem;
 }
 /* Experience*/
+.experience-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .experience-details-container {
   display: flex;
   flex-wrap: wrap;
@@ -391,6 +396,10 @@ section {
   transform: translateY(-5px);
 }
 
+.experience-box h2 {
+  margin-bottom: 1rem;
+}
+
 .experience-sub-title {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
@@ -403,4 +412,127 @@ section {
   color: #a0c4ff;
   text-decoration: underline;
   font-weight: bold;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 10rem;
+  min-height: 100vh;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.project-toggle-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.project-toggle-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  font-family: "Bitcount Grid Double", system-ui;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.project-toggle-btn.active {
+  background: palevioletred;
+  border-color: palevioletred;
+}
+
+.project-category {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.project-status-section {
+  margin-bottom: 3rem;
+}
+
+.status-label {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  font-family: 'Courier New', monospace;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: right;
+  font-family: "Bitcount Grid Double", system-ui;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-label {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+}
+
+.project-info {
+  font-size: 0.9rem;
+  color: rgb(160, 150, 153);
+  margin: 0 0 1rem 0;
+  min-height: 1.5rem;
 }
