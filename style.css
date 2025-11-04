@@ -435,7 +435,7 @@ section {
 .projects-header {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .project-toggle-container {
@@ -741,7 +741,7 @@ section {
 }
 
 .contact-label {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: 600;
   margin: 0;
@@ -749,7 +749,7 @@ section {
 }
 
 .contact-email {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #a0c4ff;
   text-decoration: none;
   font-family: 'Courier New', monospace;
