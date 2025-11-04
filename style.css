@@ -301,6 +301,11 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
 }
 
 /* BUTTONS */
@@ -698,4 +703,120 @@ section {
   line-height: 1.6;
   font-family: 'Courier New', monospace;
   min-height: 1.5rem;
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 10rem;
+  padding-top: 3rem;
+  min-height: fit-content;
+  text-align: center;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.contact-info-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  padding: 3rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact-label {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Bitcount Grid Double", system-ui;
+}
+
+.contact-email {
+  font-size: 1.5rem;
+  color: #a0c4ff;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+  color: palevioletred;
+  text-decoration: underline;
+}
+
+.contact-info-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-linkedin {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.contact-linkedin:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 1.5rem 10rem;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Bitcount Grid Double", system-ui;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: palevioletred;
+  text-decoration: underline;
+}
+
+.copyright {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  font-family: 'Courier New', monospace;
 }
