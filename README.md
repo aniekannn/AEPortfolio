@@ -1,3 +1,3 @@
 # Aniekan Ekanem Website Porfolio
 
-- Basic approach, no react used, will be published through netifly app (coming ss)
+- Basic approach with html & css, will be published through vercel (coming ss)
