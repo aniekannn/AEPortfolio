@@ -398,12 +398,13 @@ section {
   box-sizing: border-box;
   color: rgb(200, 200, 200);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
   font-family: 'Courier New', monospace;
 }
 
 .experience-box:hover {
   transform: translateY(-5px);
+  border-color: palevioletred;
 }
 
 .experience-box h2 {
@@ -505,13 +506,13 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.75rem;
   padding: 2rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
   font-family: 'Courier New', monospace;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: palevioletred;
 }
 
 .project-content {
