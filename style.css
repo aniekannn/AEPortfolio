@@ -213,8 +213,9 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    padding-bottom: 4vh;
     margin: 0 10rem;
+    margin-bottom: 6rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -365,6 +366,10 @@ section {
   padding: 1rem;
 }
 /* Experience*/
+#experience {
+  padding-top: 2vh;
+}
+
 .experience-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -417,7 +422,8 @@ section {
 /* Projects Section */
 #projects {
   padding: 4rem 10rem;
-  min-height: 100vh;
+  padding-top: 6rem;
+  min-height: fit-content;
 }
 
 .projects-header {
@@ -535,4 +541,102 @@ section {
   color: rgb(160, 150, 153);
   margin: 0 0 1rem 0;
   min-height: 1.5rem;
+}
+
+/* Skills Section */
+#skills {
+  padding: 4rem 10rem;
+  padding-top: 0.5rem;
+  min-height: fit-content;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  transition: all 0.3s ease;
+  min-height: 85px;
+  width: 100%;
+}
+
+.skill-card:nth-child(15) {
+  grid-column: 2;
+}
+
+.skill-card:nth-child(16) {
+  grid-column: 3;
+}
+
+.skill-card:nth-child(17) {
+  grid-column: 4;
+}
+
+.skill-card:nth-child(18) {
+  grid-column: 5;
+}
+
+.skill-card:nth-child(19) {
+  grid-column: 6;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: palevioletred;
+}
+
+.skill-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.skill-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  font-family: "Bitcount Grid Double", system-ui;
+  line-height: 1.2;
+}
+
+.skill-level {
+  font-size: 0.65rem;
+  color: rgb(160, 150, 153);
+  text-align: center;
+  margin: 0;
+  font-family: 'Courier New', monospace;
 }

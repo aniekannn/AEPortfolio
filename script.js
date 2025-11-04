@@ -26,23 +26,45 @@ document.addEventListener("DOMContentLoaded", () => {
   const roboticsProjects = document.getElementById('robotics-projects');
   const softwareProjects = document.getElementById('software-projects');
 
+  function switchToCategory(category) {
+    toggleButtons.forEach(btn => btn.classList.remove('active'));
+    
+    if (category === 'robotics') {
+      roboticsProjects.style.display = 'block';
+      softwareProjects.style.display = 'none';
+      document.querySelector('[data-category="robotics"]').classList.add('active');
+    } else {
+      roboticsProjects.style.display = 'none';
+      softwareProjects.style.display = 'block';
+      document.querySelector('[data-category="software"]').classList.add('active');
+    }
+  }
+
   toggleButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Remove active class from all buttons
-      toggleButtons.forEach(btn => btn.classList.remove('active'));
-      
-      // Add active class to clicked button
-      button.classList.add('active');
-      
-      // Show/hide project categories
       const category = button.getAttribute('data-category');
-      if (category === 'robotics') {
-        roboticsProjects.style.display = 'block';
-        softwareProjects.style.display = 'none';
-      } else {
-        roboticsProjects.style.display = 'none';
-        softwareProjects.style.display = 'block';
-      }
+      switchToCategory(category);
+    });
+  });
+
+  // Handle links to specific projects
+  document.querySelectorAll('a[href="#sqooasha-project"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      switchToCategory('software');
+      setTimeout(() => {
+        document.getElementById('sqooasha-project').scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    });
+  });
+
+  document.querySelectorAll('a[href="#frc-robotics-project"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      switchToCategory('robotics');
+      setTimeout(() => {
+        document.getElementById('frc-robotics-project').scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     });
   });
 });
