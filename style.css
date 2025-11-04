@@ -640,3 +640,62 @@ section {
   margin: 0;
   font-family: 'Courier New', monospace;
 }
+
+/* Leadership Section */
+#Leadership {
+  padding: 4rem 10rem;
+  padding-top: 3rem;
+  min-height: fit-content;
+}
+
+.leadership-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.leadership-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.leadership-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  transition: all 0.3s ease;
+}
+
+.leadership-box:hover {
+  transform: translateY(-5px);
+  border-color: palevioletred;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.leadership-title {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Bitcount Grid Double", system-ui;
+  line-height: 1.4;
+}
+
+.leadership-description {
+  font-size: 1rem;
+  color: rgb(160, 150, 153);
+  text-align: center;
+  line-height: 1.6;
+  font-family: 'Courier New', monospace;
+  min-height: 1.5rem;
+}
