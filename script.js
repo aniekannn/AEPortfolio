@@ -68,3 +68,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Image carousel functionality
+function changeImage(carouselId, direction) {
+  const carousel = document.getElementById(carouselId + '-carousel');
+  const images = carousel.querySelectorAll('.carousel-image');
+  let currentIndex = 0;
+  
+  // Find current active image
+  images.forEach((img, index) => {
+    if (img.classList.contains('active')) {
+      currentIndex = index;
+    }
+  });
+  
+  // Remove active class from current image
+  images[currentIndex].classList.remove('active');
+  
+  // Calculate new index
+  let newIndex = currentIndex + direction;
+  if (newIndex >= images.length) {
+    newIndex = 0;
+  } else if (newIndex < 0) {
+    newIndex = images.length - 1;
+  }
+  
+  // Add active class to new image
+  images[newIndex].classList.add('active');
+}

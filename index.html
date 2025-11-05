@@ -141,12 +141,13 @@
                     <div class="project-card">
                         <div class="project-content">
                             <h3 class="project-title">Anki</h3>
-                            <div class="project-details">
-                                <p class="project-label">Tools used</p>
-                                <p class="project-info"></p>
-                                <p class="project-label">Short description</p>
-                                <p class="project-info"></p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag"></span>
                             </div>
+                            <p class="project-description"></p>
+                        </div>
+                        <div class="project-image">
+                            <img src="" alt="Anki Project">
                         </div>
                     </div>
                 </div>
@@ -158,24 +159,26 @@
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-content">
-                            <h3 class="project-title">Lunar Autonomy Project<br>w/ NASA & Johns Hopkins</h3>
-                            <div class="project-details">
-                                <p class="project-label">Tools used</p>
-                                <p class="project-info"></p>
-                                <p class="project-label">Short description</p>
-                                <p class="project-info"></p>
+                            <h3 class="project-title">Lunar Autonomy Project w/ NASA & Johns Hopkins</h3>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag"></span>
                             </div>
+                            <p class="project-description"></p>
+                        </div>
+                        <div class="project-image">
+                            <img src="" alt="Lunar Autonomy Project">
                         </div>
                     </div>
                     <div class="project-card" id="frc-robotics-project">
                         <div class="project-content">
                             <h3 class="project-title">FRC Robotics</h3>
-                            <div class="project-details">
-                                <p class="project-label">Tools used</p>
-                                <p class="project-info"></p>
-                                <p class="project-label">Short description</p>
-                                <p class="project-info"></p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag"></span>
                             </div>
+                            <p class="project-description"></p>
+                        </div>
+                        <div class="project-image">
+                            <img src="" alt="FRC Robotics">
                         </div>
                     </div>
                 </div>
@@ -191,23 +194,33 @@
                     <div class="project-card">
                         <div class="project-content">
                             <h3 class="project-title">Clothing ID:</h3>
-                            <div class="project-details">
-                                <p class="project-label">Tools used</p>
-                                <p class="project-info"></p>
-                                <p class="project-label">Short description</p>
-                                <p class="project-info"></p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">SciKit Learn</span>
                             </div>
+                            <p class="project-description">A computer vision project for recognizing clothing types using machine learning techniques. Built with Scikit Learn and OpenCV, this system can recognize over 15 types of clothing with 48% accuracy. Currently training the model to increase accuracy.</p>
+                            <a href="https://github.com/aniekannn/clothingvision" target="_blank" class="project-link">View Code</a>
+                        </div>
+                        <div class="project-image-carousel">
+                            <button class="carousel-btn prev" onclick="changeImage('clothing-id', -1)">❮</button>
+                            <div class="carousel-images" id="clothing-id-carousel">
+                                <img src="./assets/real_detection_result.jpg" alt="Clothing ID" class="carousel-image active">
+                                <img src="./assets/accurate_detection_capture_20251027_123847.jpg" alt="Clothing ID Detection" class="carousel-image">
+                            </div>
+                            <button class="carousel-btn next" onclick="changeImage('clothing-id', 1)">❯</button>
                         </div>
                     </div>
                     <div class="project-card">
                         <div class="project-content">
                             <h3 class="project-title">Aggie Agenda</h3>
-                            <div class="project-details">
-                                <p class="project-label">Tools used</p>
-                                <p class="project-info"></p>
-                                <p class="project-label">Short description</p>
-                                <p class="project-info"></p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag"></span>
                             </div>
+                            <p class="project-description"></p>
+                        </div>
+                        <div class="project-image">
+                            <img src="" alt="Aggie Agenda">
                         </div>
                     </div>
                 </div>
@@ -220,12 +233,13 @@
                     <div class="project-card" id="sqooasha-project">
                         <div class="project-content">
                             <h3 class="project-title">Sqooasha Web Scraper</h3>
-                            <div class="project-details">
-                                <p class="project-label">Tools used</p>
-                                <p class="project-info"></p>
-                                <p class="project-label">Short description</p>
-                                <p class="project-info"></p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag"></span>
                             </div>
+                            <p class="project-description"></p>
+                        </div>
+                        <div class="project-image">
+                            <img src="" alt="Sqooasha Web Scraper">
                         </div>
                     </div>
                 </div>
@@ -295,10 +309,18 @@
 
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="" alt="Github">
+                    <img src="" alt="Arduino">
                 </div>
-                <p class="skill-name">Github</p>
-                <p class="skill-level">Expert</p>
+                <p class="skill-name">Arduino</p>
+                <p class="skill-level">Intermediate</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="" alt="Raspberry Pi">
+                </div>
+                <p class="skill-name">Raspberry Pi</p>
+                <p class="skill-level">Intermediate</p>
             </div>
 
             <div class="skill-card">
@@ -389,7 +411,7 @@
                 <p class="skill-level">Beginner</p>
             </div>
         </div>
-    </section>
+        </section>
 
     <section id="Leadership">
         <h1 class="leadership-header">Examples of LEADERSHIP</h1>
