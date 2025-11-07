@@ -293,6 +293,12 @@ section {
   text-align: center;
   color: white;
   font-family: 'Courier New', monospace;
+  font-weight: normal;
+}
+
+.intro-text p {
+  color: #d0d0d0 !important;
+  font-weight: normal !important;
 }
 
 
@@ -550,7 +556,7 @@ section {
 }
 
 .project-description {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: rgb(200, 200, 200);
   line-height: 1.6;
   margin: 0;
