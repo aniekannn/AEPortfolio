@@ -1,3 +1,15 @@
+/* iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+    /* Fix for iOS Safari */
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+    
+    input, textarea, select {
+        font-size: 16px; /* Prevents iOS zoom on input focus */
+    }
+}
+
 /* Tablet and smaller desktop styles */
 @media screen and (max-width: 1400px) {
     section {
@@ -240,15 +252,25 @@
 
 /* Mobile styles */
 @media screen and (max-width: 600px) {
+    /* Prevent horizontal scroll */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
     section {
         margin: 0 1rem;
         margin-bottom: 3rem;
         padding-top: 3vh;
         padding-bottom: 3vh;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     nav {
         height: 12vh;
+        width: 100%;
     }
 
     .logo {
@@ -257,6 +279,8 @@
 
     .hamburger-menu {
         transform: scale(0.9);
+        min-width: 44px; /* Apple's recommended touch target size */
+        min-height: 44px;
     }
 
     .menu-links {
@@ -310,16 +334,22 @@
         padding: 0.8rem;
         font-size: 0.9rem;
         width: 130px;
+        min-height: 44px; /* iOS touch target */
+        touch-action: manipulation;
     }
 
     .btn-container {
         gap: 0.8rem;
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
     }
 
     .icon {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
+        min-width: 44px; /* Better touch target */
+        min-height: 44px;
     }
 
     .experience-header h1,
@@ -355,21 +385,33 @@
         font-size: 0.85rem;
         flex: 1;
         min-width: 150px;
+        min-height: 44px; /* iOS touch target */
+        touch-action: manipulation;
     }
 
     .project-card {
         padding: 1.2rem;
         gap: 1rem;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .project-content {
+        width: 100%;
+        max-width: 100%;
     }
 
     .project-title {
         font-size: 1.1rem;
         margin-bottom: 0.5rem;
+        word-wrap: break-word;
     }
 
     .project-tech-tags {
         gap: 0.4rem;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .tech-tag {
@@ -380,27 +422,43 @@
     .project-description {
         font-size: 0.7rem;
         line-height: 1.4;
+        word-wrap: break-word;
     }
 
     .project-link {
         font-size: 0.8rem;
+        min-height: 44px; /* iOS touch target */
+        display: inline-flex;
+        align-items: center;
+        touch-action: manipulation;
     }
 
     .project-image-carousel {
         width: 100%;
+        max-width: 100%;
         height: 200px;
+        overflow: hidden;
     }
 
     .project-image {
         width: 100%;
+        max-width: 100%;
         height: 200px;
     }
 
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
     .carousel-btn {
-        width: 35px;
-        height: 35px;
+        width: 44px; /* iOS touch target */
+        height: 44px;
         font-size: 1.2rem;
         padding: 0.3rem;
+        touch-action: manipulation;
+        flex-shrink: 0;
     }
 
     .skills-container {
@@ -450,16 +508,35 @@
     .contact-info-container {
         padding: 1.5rem 1rem;
         overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-info-left,
+    .contact-info-right {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .contact-email {
         font-size: 0.85rem;
         text-align: center;
+        word-break: break-all;
+        overflow-wrap: anywhere;
+        hyphens: auto;
+        max-width: 100%;
+        display: block;
+        min-height: 44px; /* iOS touch target */
+        line-height: 44px;
     }
 
     .linkedin-icon {
         width: 3rem;
         height: 3rem;
+        min-width: 44px; /* iOS touch target */
+        min-height: 44px;
     }
 
     footer {
@@ -489,8 +566,16 @@
 
 /* Extra small mobile devices */
 @media screen and (max-width: 400px) {
+    body {
+        overflow-x: hidden;
+    }
+
     section {
         margin: 0 0.5rem;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     .logo {
@@ -508,12 +593,14 @@
     .section__pic-container {
         width: 180px;
         height: 180px;
+        margin: 0 auto;
     }
 
     .btn {
         padding: 0.7rem;
         font-size: 0.85rem;
         width: 120px;
+        min-height: 44px;
     }
 
     .experience-header h1,
@@ -526,27 +613,120 @@
 
     .project-card {
         padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .project-image-carousel {
         height: 180px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .project-image {
         height: 180px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
     }
 
     .skills-container {
         grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 0.6rem;
     }
 
     .skill-card {
         padding: 0.6rem;
         min-height: 90px;
+        width: 100%;
     }
 
     .skill-icon img {
         width: 25px;
         height: 25px;
+    }
+
+    .contact-email {
+        font-size: 0.75rem;
+        word-break: break-all;
+    }
+
+    .contact-info-container {
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* iPhone X and newer - notch support */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+    
+    nav {
+        padding-top: env(safe-area-inset-top);
+    }
+}
+
+/* iPhone 12, 13, 14 Pro */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+    
+    nav {
+        padding-top: env(safe-area-inset-top);
+    }
+}
+
+/* iPhone 14 Pro Max, 15 Pro Max */
+@media only screen 
+    and (device-width: 430px) 
+    and (device-height: 932px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+    
+    nav {
+        padding-top: env(safe-area-inset-top);
+    }
+}
+
+/* Landscape mode optimizations for iPhone */
+@media screen and (max-height: 450px) and (orientation: landscape) {
+    nav {
+        height: 10vh;
+    }
+    
+    section {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    
+    .section__pic-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #profile {
+        flex-direction: row;
+        align-items: center;
     }
 }

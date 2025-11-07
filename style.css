@@ -11,6 +11,8 @@
 img {
     max-width: 100%;
     height: auto;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 body {
@@ -23,10 +25,16 @@ body {
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 html{
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 p{
@@ -187,6 +195,8 @@ a:hover, a:active {
     transition: all 0.3s ease-in-out;
     margin-top: 1rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
 }
 
 .menu-links a {
