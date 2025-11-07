@@ -142,12 +142,22 @@
                         <div class="project-content">
                             <h3 class="project-title">Ankl</h3>
                             <div class="project-tech-tags">
-                                <span class="tech-tag"></span>
+                                <span class="tech-tag">Stewart Platform</span>
+                                <span class="tech-tag">CAD</span>
+                                <span class="tech-tag">RasberryPi</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">ROS2</span>
                             </div>
-                            <p class="project-description"></p>
+                            <p class="project-description">Working on the software team to program a Stewart-platform-based prosthetic ankle to restore full range of motion to transfemoral (below-the-knee) amputees. Currently implementing our current Python Stewart Platform simulation into ROS2 for better motion control.</p>
                         </div>
-                        <div class="project-image">
-                            <img src="" alt="Ankl Project">
+                        <div class="project-image-carousel" id="ankl-carousel">
+                            <button class="carousel-btn prev" onclick="changeImage('ankl', -1)">‹</button>
+                            <div class="carousel-images">
+                                <img src="./assets/unknown.jpg" alt="Ankl Project" class="carousel-image active">
+                                <img src="./assets/platform.jpg" alt="Ankl Project - Platform" class="carousel-image">
+                                <img src="./assets/Moving platform.png" alt="Ankl Project - Moving Platform" class="carousel-image">
+                            </div>
+                            <button class="carousel-btn next" onclick="changeImage('ankl', 1)">›</button>
                         </div>
                     </div>
                 </div>
