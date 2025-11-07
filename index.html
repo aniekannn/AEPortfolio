@@ -171,24 +171,41 @@
                         <div class="project-content">
                             <h3 class="project-title">Lunar Autonomy Project w/ NASA & Johns Hopkins</h3>
                             <div class="project-tech-tags">
-                                <span class="tech-tag"></span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AprilTags</span>
+                                <span class="tech-tag">Limelight</span>
+                                <span class="tech-tag">ROS2</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Sensor Fusion</span>
+                                <span class="tech-tag">Linux</span>
                             </div>
-                            <p class="project-description"></p>
+                            <p class="project-description">As part of the Localization Team for the Lunar Autonomy Challenge, I helped build the localization and mapping system for our autonomous lunar rover. I focused on implementing Visual-Inertial Odometry (VIO) that fused stereo camera and IMU data to estimate the rover's position accurately. I also integrated AprilTag detection for position correction relative to the lander and contributed to 3D terrain reconstruction.</p>
                         </div>
                         <div class="project-image">
-                            <img src="" alt="Lunar Autonomy Project">
+                            <img src="./assets/Screenshot 2025-11-06 at 18.33.44.png" alt="Lunar Autonomy Project">
                         </div>
                     </div>
                     <div class="project-card" id="frc-robotics-project">
                         <div class="project-content">
-                            <h3 class="project-title">FRC Robotics</h3>
+                            <h3 class="project-title">FIRST Robotics (FRC Team 7407)</h3>
                             <div class="project-tech-tags">
-                                <span class="tech-tag"></span>
+                                <span class="tech-tag">PCB Design</span>
+                                <span class="tech-tag">RoboRIO</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Onshape</span>
+                                <span class="tech-tag">Fusion 360</span>
                             </div>
-                            <p class="project-description"></p>
+                            <p class="project-description">As Co-Lead of the Electrical and Control Systems team for FRC Team 7407, I was responsible for designing and fabricating the electronic backbone of our competition robots. I developed custom PCBs, control circuits, and sensor networks while tuning PID loops for both autonomous and driver-controlled modes. I also did CAD work and CNC fabrication using Onshape and Fusion 360. My role required a lot of collaboration across teams build our robot.</p>
                         </div>
-                        <div class="project-image">
-                            <img src="" alt="FRC Robotics">
+                        <div class="project-image-carousel" id="frc-carousel">
+                            <button class="carousel-btn prev" onclick="changeImage('frc', -1)">‹</button>
+                            <div class="carousel-images">
+                                <img src="./assets/frcrobot.jpeg" alt="FRC Robotics" class="carousel-image active">
+                                <img src="./assets/IMG_9912.png" alt="FRC Robotics - CAD" class="carousel-image">
+                                <img src="./assets/IMG_9860.png" alt="FRC Robotics - Electronics" class="carousel-image">
+                                <img src="./assets/IMG_9648.png" alt="FRC Robotics - PCB" class="carousel-image">
+                            </div>
+                            <button class="carousel-btn next" onclick="changeImage('frc', 1)">›</button>
                         </div>
                     </div>
                 </div>
