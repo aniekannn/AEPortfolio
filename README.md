@@ -1,3 +1,5 @@
 # Aniekan Ekanem Website Porfolio
 
-- Basic approach with html & css, will be published through vercel (coming soon!!)
+Check out aniekan-ekanem.com
+
+- Basic approach with html & css, published through vercel
