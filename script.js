@@ -1,8 +1,8 @@
-function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open")
+  icon.classList.toggle("open")
 
 }
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function switchToCategory(category) {
     toggleButtons.forEach(btn => btn.classList.remove('active'));
-    
+
     if (category === 'robotics') {
       roboticsProjects.style.display = 'block';
       softwareProjects.style.display = 'none';
@@ -74,17 +74,17 @@ function changeImage(carouselId, direction) {
   const carousel = document.getElementById(carouselId + '-carousel');
   const images = carousel.querySelectorAll('.carousel-image');
   let currentIndex = 0;
-  
+
   // Find current active image
   images.forEach((img, index) => {
     if (img.classList.contains('active')) {
       currentIndex = index;
     }
   });
-  
+
   // Remove active class from current image
   images[currentIndex].classList.remove('active');
-  
+
   // Calculate new index
   let newIndex = currentIndex + direction;
   if (newIndex >= images.length) {
@@ -92,7 +92,7 @@ function changeImage(carouselId, direction) {
   } else if (newIndex < 0) {
     newIndex = images.length - 1;
   }
-  
+
   // Add active class to new image
   images[newIndex].classList.add('active');
 }
