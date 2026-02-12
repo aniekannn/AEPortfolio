@@ -567,6 +567,10 @@ section {
   animation: fadeIn 0.5s ease;
 }
 
+#software-projects {
+  display: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
